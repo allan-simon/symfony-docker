@@ -36,7 +36,7 @@ EOS
     php app/console c:c
     php app/console c:w
     php app/console doctrine:migrations:migrate --no-interaction
-    php app/console assetic:dump
+    php app/console assetic:dump  --env=prod --no-debug
     # not pretty ...
     chmod -R 777 app/logs
     chmod -R 777 app/cache
