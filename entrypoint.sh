@@ -32,7 +32,7 @@ EOS
     else
         mkdir app/cache
     fi
-    php app/console assets:install --symlink web/
+    php app/console assets:install --env=prod --symlink web/
     php app/console c:c
     php app/console c:w
     php app/console doctrine:migrations:migrate --no-interaction
